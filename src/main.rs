@@ -95,7 +95,7 @@ fn main() {
 	});
 
     // r#""# is string escape format
-    let send_msg: String = r#"{"jsonrpc":"2.0","method":"subscribe","params":{"channel":"lightning_executions_BTC_JPY"}}"#.to_string();
+    let send_msg: String = r#"{"jsonrpc":"2.0","method":"subscribe","params":{"channel":"lightning_executions_FX_BTC_JPY"}}"#.to_string();
     println!("{}",send_msg);
 	match tx.send(OwnedMessage::Text(send_msg)) {
 		Ok(()) => (),
